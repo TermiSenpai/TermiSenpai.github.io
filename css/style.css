@@ -26,11 +26,17 @@ input[type="button"]{
 	background-image: url(/images/linkedin.png);
 	background-repeat: no-repeat;
 	background-position: center;
+	text-align: center;
+	width: 85%;
+	margin: 0 auto;
 }
 #twitter{
 	background-image: url(/images/twitter.png);
 	background-repeat: no-repeat;
 	background-position: center;
+	text-align: center;
+	width: 85%;
+	margin: 0 auto;
 }
 #youtube{
 	background-image: url(/images/youtube.png);
@@ -41,6 +47,15 @@ input[type="button"]{
 	background-image: url(/images/twitch.png);
 	background-repeat: no-repeat;
 	background-position: center;
+	text-align: center;
+	width: 85%;
+	margin: 0 auto;
+}
+
+#grid{
+	text-align: center;
+	width: 300%;
+	margin: 0 auto;
 }
 
 h1,h2,h3,h4,h5,h6{
