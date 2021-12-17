@@ -16,8 +16,8 @@ input[type="button"]{
 	-o-transition:0.5s all;
 	-ms-transition:0.5s all;
 
-	width: fit-content;
 	height: fit-content;
+	width: fit-content;
 	background: none;
 	border:  none;
 }
@@ -42,6 +42,9 @@ input[type="button"]{
 	background-image: url(/images/youtube.png);
 	background-repeat: no-repeat;
 	background-position: center;
+	text-align: center;
+	width: 85%;
+	margin: 0 auto;
 }
 #twitch{
 	background-image: url(/images/twitch.png);
