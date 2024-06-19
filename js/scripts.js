@@ -21,43 +21,56 @@ const educationEntries = [
         },
         es: {
             title: "Master en programación de videojuegos y realidad virtual con Unity",
-            institution: "Universidad de Tecnología",
+            institution: "Tokio School",
             date: "2022 - 2024"
         }
     },
-    // Añade más entradas si es necesario
+    {
+        en: {
+            title: "Master's in Game Development and Virtual Reality with Unreal Engine",
+            institution: "Tokio School",
+            date: "2023 - Present"
+        },
+        es: {
+            title: "Master en desarrollo de videojuegos y realidad virtual con Unreal Engine",
+            institution: "Tokio School",
+            date: "2023 - Actualmente"
+        }
+    }
 ];
+
 
 const experienceEntries = [
     {
         title: {
-            en: "Game Developer at XYZ Studios",
-            es: "Desarrollador de Videojuegos en XYZ Studios"
+            en: "Software Developer at Austral-Robotics",
+            es: "Desarrollador de software en Austral-Robotics"
         },
         description: {
-            en: "Worked on developing 3D games using Unity and C#. Led a team of developers in various projects.",
-            es: "Trabajó en el desarrollo de juegos 3D utilizando Unity y C#. Lideró un equipo de desarrolladores en varios proyectos."
+            en: "Worked remotely on software development tasks, focusing on Unity and problem-solving skills.",
+            es: "Trabajó de forma remota en tareas de desarrollo de software, centrándose en Unity y habilidades de resolución de problemas."
         },
         date: {
-            en: "January 2020 - Present",
-            es: "Enero 2020 - Presente"
+            en: "January 2024 - March 2024",
+            es: "Enero 2024 - Marzo 2024"
         }
     },
     {
         title: {
-            en: "Junior Developer at ABC Games",
-            es: "Desarrollador Junior en ABC Games"
+            en: "C# Developer at TALLERES PALACIO AROCA S.L.",
+            es: "C# Developer en TALLERES PALACIO AROCA S.L."
         },
         description: {
-            en: "Assisted in the development of mobile games. Improved game performance and fixed bugs.",
-            es: "Asistió en el desarrollo de juegos móviles. Mejoró el rendimiento del juego y corrigió errores."
+            en: "Developed a desktop application with CRUD operations connected to a database.",
+            es: "Desarrolló una aplicación de escritorio con operaciones CRUD conectadas a una base de datos."
         },
         date: {
-            en: "June 2018 - December 2019",
-            es: "Junio 2018 - Diciembre 2019"
+            en: "October 2021 - November 2021",
+            es: "Octubre 2021 - Noviembre 2021"
         }
     }
 ];
+
 
 const codingSkills = [
     {
@@ -68,8 +81,56 @@ const codingSkills = [
         en: "Unity Development",
         es: "Desarrollo con Unity"
     },
-    // Añade más habilidades si es necesario
+    {
+        en: "Software Design",
+        es: "Diseño de software"
+    },
+    {
+        en: "Software Documentation",
+        es: "Documentación de programas informáticos"
+    },
+    {
+        en: "Technical Documentation",
+        es: "Documentación técnica"
+    },
+    {
+        en: "Multithreading",
+        es: "Desarrollo multihilo"
+    },
+    {
+        en: "Optimization",
+        es: "Optimización"
+    },
+    {
+        en: "Object-Oriented Programming (OOP)",
+        es: "Programación Orientada a Objetos (POO)"
+    },
+    {
+        en: "SOLID Principles",
+        es: "Principios SOLID"
+    },
+    {
+        en: "Game Design",
+        es: "Diseño de videojuegos"
+    },
+    {
+        en: "C++ Programming",
+        es: "Programación en C++"
+    },
+    {
+        en: "JavaScript",
+        es: "JavaScript"
+    },
+    {
+        en: "Python Programming",
+        es: "Programación en Python"
+    },
+    {
+        en: "GIT Version Control",
+        es: "Control de versiones con GIT"
+    }
 ];
+
 
 const professionalSkills = [
     {
@@ -80,8 +141,20 @@ const professionalSkills = [
         en: "Team Collaboration",
         es: "Colaboración en Equipo"
     },
-    // Añade más habilidades si es necesario
+    {
+        en: "Problem Solving",
+        es: "Resolución de Problemas"
+    },
+    {
+        en: "Game Design",
+        es: "Diseño de Videojuegos"
+    },
+    {
+        en: "Self-Taught Learning",
+        es: "Aprendizaje Autodidacta"
+    }
 ];
+
 
 function renderContent() {
     document.querySelector('h1').textContent = document.querySelector('h1').getAttribute(`data-${currentLanguage}`);
