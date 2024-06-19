@@ -8,44 +8,47 @@
 </head>
 <body>
     <header>
-        <div id="language-selector">
-            <button id="en-button">English</button>
-            <button id="es-button">Español</button>
-        </div>
-        <h1 data-en="Hi, I'm Alejandro Escarpa" data-es="Hola, soy Alejandro Escarpa">Hi, I'm Alejandro Escarpa</h1>
+        <h1 data-en="Alejandro Escarpa" data-es="Alejandro Escarpa">Alejandro Escarpa</h1>
         <h2 data-en="Game Developer" data-es="Desarrollador de videojuegos">Game Developer</h2>
-        <p data-en="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet laborum, autem architecto."
-           data-es="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet laborum, autem architecto.">
-           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet laborum, autem architecto.
-        </p>
-        <button id="hire-me-button" data-en="Hire Me" data-es="Contrátame">Hire Me</button>
-        <button id="talk-button" data-en="Let's Talk" data-es="Hablemos">Let's Talk</button>
-        <button id="download-pdf" data-en="Download PDF" data-es="Descargar PDF">Download PDF</button>
+        <div class="button-container">
+            <button id="en-button" data-en="English" data-es="Inglés">English</button>
+            <button id="es-button" data-en="Spanish" data-es="Español">Español</button>
+        </div>
+        <div class="pdf-container">
+            <button id="download-pdf" data-en="Download PDF" data-es="Descargar PDF">Descargar PDF</button>
+        </div>
     </header>
 
-    <section id="about-me">
-		<h2 data-en="About Me" data-es="Sobre Mí">About Me</h2>
-		<img src="images/profile.jpg" alt="Alejandro Escarpa">
-		<p data-en="Game Developer!" data-es="Desarrollador de videojuegos!">Game Developer!</p>
-		<p data-en="I am a passionate video game developer. Since I was young, video games have been my passion, and today, I'm proud to say I've turned that passion into my profession.
-		I’ve had the opportunity to explore the fascinating world of game development, focusing particularly on Unity. With strong skills in C# programming and a deep understanding of Unity's intricacies, I’ve undertaken various projects, ranging from exciting mobile games to VR and PC games.
-		What excites me most about this field is the ability to create immersive and captivating worlds that allow players to immerse themselves in unique adventures.
-		Here you’ll find a collection of creations that reflect my evolution as a developer and my dedication to achieving excellence in each project.
-		When I’m not immersed in game development, I enjoy diving into other virtual worlds and participating in communities. This passion for video games constantly inspires me to improve and learn new techniques and approaches to make my projects even more exciting and engaging.
-		My goal is to share my love for video games with everyone and offer them a special experience for their lives, just as classic video games did for me."
-		   data-es="Soy un apasionado desarrollador de videojuegos. Desde pequeño los videojuegos han sido mi pasión, y hoy en día, me enorgullece decir que he convertido esa pasión en mi profesión.
-		   He tenido la oportunidad de explorar el fascinante mundo del desarrollo de videojuegos, centrándome especialmente en Unity. Con habilidades sólidas en programación en C# y una profunda comprensión de los entresijos de Unity, he llevado a cabo diversos proyectos, desde emocionantes juegos para móvil, para VR y para PC.
-		   Lo que más me emociona de este campo es la capacidad de crear mundos inmersivos y cautivadores que permitan a los jugadores sumergirse en aventuras únicas.
-		   Aquí encontrarás una colección de creaciones que reflejan mi evolución como desarrollador y mi dedicación para alcanzar la excelencia en cada proyecto.
-		   Cuando no estoy inmerso en el desarrollo de videojuegos, disfruto sumergirme en otros mundos virtuales y participar en comunidades. Esta pasión por los videojuegos me inspira constantemente a mejorar y aprender nuevas técnicas y enfoques para hacer que mis proyectos sean aún más emocionantes y envolventes.​
-		   Mi objetivo es compartir mi amor por los videojuegos con todos y ofrecerles una experiencia especial para sus vidas, al igual que los antiguos videojuegos lo hicieron conmigo.">
-		   AboutMe.
-		</p>
-	</section>
-	
-	
-
-    <section id="my-journey">
+    <section id="about-me" class="alt-900">
+        <h2 data-en="About Me" data-es="Sobre Mí">About Me</h2>
+        <img src="images/profile.jpg" alt="Alejandro Escarpa">
+        <p data-en="I am a passionate video game developer. Since I was young, video games have been my passion, and today, I'm proud to say I've turned that passion into my profession."
+           data-es="Soy un apasionado desarrollador de videojuegos. Desde pequeño los videojuegos han sido mi pasión, y hoy en día, me enorgullece decir que he convertido esa pasión en mi profesión.">
+           I am a passionate video game developer. Since I was young, video games have been my passion, and today, I'm proud to say I've turned that passion into my profession.
+        </p>
+        <p data-en="I've had the opportunity to explore the fascinating world of game development, focusing particularly on Unity. With strong skills in C# programming and a deep understanding of Unity's intricacies, I've undertaken various projects, ranging from exciting mobile games to VR and PC games."
+           data-es="He tenido la oportunidad de explorar el fascinante mundo del desarrollo de videojuegos, centrándome especialmente en Unity. Con habilidades sólidas en programación en C# y una profunda comprensión de los entresijos de Unity, he llevado a cabo diversos proyectos, desde emocionantes juegos para móvil, para VR y para PC.">
+           I've had the opportunity to explore the fascinating world of game development, focusing particularly on Unity. With strong skills in C# programming and a deep understanding of Unity's intricacies, I've undertaken various projects, ranging from exciting mobile games to VR and PC games.
+        </p>
+        <p data-en="What excites me most about this field is the ability to create immersive and captivating worlds that allow players to immerse themselves in unique adventures."
+           data-es="Lo que más me emociona de este campo es la capacidad de crear mundos inmersivos y cautivadores que permitan a los jugadores sumergirse en aventuras únicas.">
+           What excites me most about this field is the ability to create immersive and captivating worlds that allow players to immerse themselves in unique adventures.
+        </p>
+        <p data-en="Here you'll find a collection of creations that reflect my evolution as a developer and my dedication to achieving excellence in each project."
+           data-es="Aquí encontrarás una colección de creaciones que reflejan mi evolución como desarrollador y mi dedicación para alcanzar la excelencia en cada proyecto.">
+           Here you'll find a collection of creations that reflect my evolution as a developer and my dedication to achieving excellence in each project.
+        </p>
+        <p data-en="When I'm not immersed in game development, I enjoy diving into other virtual worlds and participating in communities. This passion for video games constantly inspires me to improve and learn new techniques and approaches to make my projects even more exciting and engaging."
+           data-es="Cuando no estoy inmerso en el desarrollo de videojuegos, disfruto sumergirme en otros mundos virtuales y participar en comunidades. Esta pasión por los videojuegos me inspira constantemente a mejorar y aprender nuevas técnicas y enfoques para hacer que mis proyectos sean aún más emocionantes y envolventes.">
+           When I'm not immersed in game development, I enjoy diving into other virtual worlds and participating in communities. This passion for video games constantly inspires me to improve and learn new techniques and approaches to make my projects even more exciting and engaging.
+        </p>
+        <p data-en="My goal is to share my love for video games with everyone and offer them a special experience for their lives, just as classic video games did for me."
+           data-es="Mi objetivo es compartir mi amor por los videojuegos con todos y ofrecerles una experiencia especial para sus vidas, al igual que los antiguos videojuegos lo hicieron conmigo.">
+           My goal is to share my love for video games with everyone and offer them a special experience for their lives, just as classic video games did for me.
+        </p>
+    </section>
+    
+    <section id="my-journey" class="alt-950">
         <h2 data-en="My Journey" data-es="Mi Trayectoria">My Journey</h2>
         <div id="education">
             <h3 data-en="Education" data-es="Educación">Education</h3>
@@ -57,7 +60,7 @@
         </div>
     </section>
 
-    <section id="my-skills">
+    <section id="my-skills" class="alt-900">
         <h2 data-en="My Skills" data-es="Mis Habilidades">My Skills</h2>
         <div id="coding-skills">
             <h3 data-en="Coding Skills" data-es="Habilidades de Codificación">Coding Skills</h3>
@@ -69,36 +72,24 @@
         </div>
     </section>
 
-    <section id="contact-me">
+    <section id="contact-me" class="alt-950">
         <h2 data-en="Contact Me" data-es="Contáctame">Contact Me</h2>
         <div>
             <p data-en="Feel free to reach out to me via the following contact details:" 
                data-es="No dudes en ponerte en contacto conmigo a través de los siguientes datos de contacto:">
                Feel free to reach out to me via the following contact details:
             </p>
-            <p>
-                <strong data-en="Email:" data-es="Correo Electrónico:">Email:</strong> 
-                <a href="mailto:your-email@example.com">your-email@example.com</a>
-            </p>
-            <p>
-                <strong data-en="Phone:" data-es="Teléfono:">Phone:</strong> 
-                +123-456-7890
-            </p>
-            <p>
-                <strong data-en="LinkedIn:" data-es="LinkedIn:">LinkedIn:</strong> 
-                <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a>
-            </p>
+            <p data-en="Email: escarpaprieto@gmail.com" data-es="Correo Electrónico: escarpaprieto@gmail.com">Email: escarpaprieto@gmail.com</p>
+            <p data-en="Phone: +34 648 27 69 02" data-es="Teléfono: +34 648 27 69 02">Phone: +34 648 27 69 02</p>
+            <p data-en="LinkedIn" data-es="LinkedIn">LinkedIn: <a href="https://www.linkedin.com/in/alejandro-escarpa/" target="_blank">linkedin</a></p>
         </div>
     </section>
+    
 
     <footer>
-        <p data-en="Copyright © 2024 by Alejandro Escarpa. All Rights Reserved."
-           data-es="Copyright © 2024 por Alejandro Escarpa. Todos los Derechos Reservados.">
-           Copyright © 2024 by Alejandro Escarpa. All Rights Reserved.
-        </p>
+        <p data-en="All rights reserved." data-es="Todos los derechos reservados.">All rights reserved.</p>
     </footer>
 
     <script src="js/scripts.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
 </body>
 </html>
