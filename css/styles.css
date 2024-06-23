@@ -18,7 +18,20 @@ body {
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+
 h1{
+    color: #f5f7fa;
+}
+
+h3{
+    color: #f5f7fa;
+}
+
+h2{
+    color: #f5f7fa;
+}
+
+p{
     color: #f5f7fa;
 }
 
@@ -69,7 +82,7 @@ h1{
 
 /* Estilos para el contenido */
 .content {
-    background-color: #f9f9f9;
+    background-color: #3a526a;
     padding: 20px;
     border-radius: 5px;
 }
