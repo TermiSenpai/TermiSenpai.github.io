@@ -37,7 +37,6 @@ const educationEntries = [
     }
 ];
 
-
 const experienceEntries = [
     {
         title: {
@@ -68,7 +67,6 @@ const experienceEntries = [
         }
     }
 ];
-
 
 const codingSkills = [
     {
@@ -128,7 +126,6 @@ const codingSkills = [
         es: "Control de versiones con GIT"
     }
 ];
-
 
 const professionalSkills = [
     {
