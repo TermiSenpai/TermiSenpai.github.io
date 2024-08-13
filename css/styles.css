@@ -1,5 +1,5 @@
 /* Estilos para el cuerpo de la página */
-html {
+html, body {
     background-image: url('/images/wallpaper.gif');
     background-size:cover;
     background-position: center;
