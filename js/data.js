@@ -169,8 +169,8 @@ const aboutContent = {
         es: "Acerca de mi"
     },
     description: {
-        en: "Xkoi Games is a team passionate about developing innovative video games...",
-        es: "Xkoi Games es un equipo apasionado por desarrollar videojuegos innovadores..."
+        en: "My name is Alejandro Escarpa, Im software developer what i want to improve my skills in development wanting to specialize in game development.",
+        es: "Mi nombre es Alejandro Escarpa, soy un desarrollador de sofware que busca mejorar mis habilidades, especializandome en desarrollo de videojuegos"
     }
 };
 
