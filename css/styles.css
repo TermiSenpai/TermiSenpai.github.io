@@ -1,7 +1,7 @@
 /* Estilos para el cuerpo de la página */
 body {
     background-image: url('/images/wallpaper.gif');
-    background-size:cover;
+    background-size:auto;
     background-position: top;
     background-repeat: no-repeat;
     margin: 0;
