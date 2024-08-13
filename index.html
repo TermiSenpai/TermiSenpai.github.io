@@ -13,6 +13,11 @@
             <div class="profile-info">
                 <h1>Alejandro Escarpa</h1>
                 <p>Programador de videojuegos</p>
+                <label for="language-select">Idioma:</label>
+                <select id="language-select">
+                    <option value="en">Inglés</option>
+                    <option value="es" selected>Español</option>
+                </select>
             </div>
         </div>
         <div class="menu">
@@ -20,6 +25,7 @@
             <button onclick="showTab('about')">Acerca de</button>
             <button onclick="showTab('studies')">Estudios</button>
             <button onclick="showTab('experience')">Experiencia Laboral</button>
+            <button onclick="showTab('codingSkills')">Habilidades</button>
             <button onclick="showTab('projects')">Proyectos</button>
             <button onclick="showTab('contact')">Contacto</button>
         </div>
@@ -30,4 +36,7 @@
     <script src="js/data.js"></script>
     <script src="js/script.js"></script>
 </body>
+<footer class="footer">
+    <p>&copy; 2024 Alejandro Escarpa. Todos los derechos reservados.</p>
+</footer>
 </html>

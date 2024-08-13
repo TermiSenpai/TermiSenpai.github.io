@@ -185,6 +185,8 @@ const projectEntries = [
 
 const contactContent = {
     title: "Contacto",
-    description: "Ponte en contacto con nosotros a través de nuestras redes sociales o correo electrónico."
+    description: "Ponte en contacto conmigo",
+    phone: "Tfno: +34 648 27 69 02",
+    email: "Email: escarpaprieto@gmail.com"
 };
 
