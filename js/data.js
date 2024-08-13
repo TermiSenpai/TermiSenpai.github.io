@@ -153,12 +153,12 @@ const professionalSkills = [
 // Datos de Inicio
 const homeContent = {
     title: {
-        en: "Welcome to Xkoi Games",
-        es: "Bienvenido a Xkoi Games"
+        en: "Welcome to my portfolio",
+        es: "Bienvenido a mi porfolio"
     },
     description: {
-        en: "Here you will find all the information about our team and projects.",
-        es: "Aquí encontrarás toda la información sobre nuestro equipo y proyectos."
+        en: "Here you will find all the information about my skills and projects.",
+        es: "Aquí encontrarás toda la información sobre mis habilidades y proyectos."
     }
 };
 
@@ -166,7 +166,7 @@ const homeContent = {
 const aboutContent = {
     title: {
         en: "About Us",
-        es: "Acerca de Nosotros"
+        es: "Acerca de mi"
     },
     description: {
         en: "Xkoi Games is a team passionate about developing innovative video games...",
