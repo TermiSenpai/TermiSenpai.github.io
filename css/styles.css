@@ -7,8 +7,6 @@ html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
 }
 
 /* Estilos para el contenedor principal */
@@ -19,7 +17,6 @@ html {
     border-radius: 25px;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    flex: 1;
 }
 
 h1{
