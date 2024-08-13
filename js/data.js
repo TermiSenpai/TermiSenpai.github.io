@@ -150,43 +150,128 @@ const professionalSkills = [
     }
 ];
 
-// Datos para las secciones
+// Datos de Inicio
 const homeContent = {
-    title: "Bienvenido a Xkoi Games",
-    description: "Aquí encontrarás toda la información sobre nuestro equipo y proyectos."
+    title: {
+        en: "Welcome to Xkoi Games",
+        es: "Bienvenido a Xkoi Games"
+    },
+    description: {
+        en: "Here you will find all the information about our team and projects.",
+        es: "Aquí encontrarás toda la información sobre nuestro equipo y proyectos."
+    }
 };
 
+// Datos de Sobre Mí
 const aboutContent = {
-    title: "Acerca de Nosotros",
-    description: "Xkoi Games es un equipo apasionado por desarrollar videojuegos innovadores..."
+    title: {
+        en: "About Us",
+        es: "Acerca de Nosotros"
+    },
+    description: {
+        en: "Xkoi Games is a team passionate about developing innovative video games...",
+        es: "Xkoi Games es un equipo apasionado por desarrollar videojuegos innovadores..."
+    }
 };
 
+// Datos de Proyectos
 const projectEntries = [
     {
-        title: "SniperRush",
-        image: "images/SniperRush.png",  
-        description: "Sumérgete en una experiencia épica de acción con tus amigos con este emocionante shooter en primera persona. Prepárate para vivir una aventura sin límites en el cielo y la tierra.",
+        title: {
+            en: "SniperRush",
+            es: "SniperRush"
+        },
+        image: "images/SniperRush.png",
+        description: {
+            en: "Dive into an epic action experience with your friends with this thrilling first-person shooter. Get ready to embark on a limitless adventure in the skies and on the ground.",
+            es: "Sumérgete en una experiencia épica de acción con tus amigos con este emocionante shooter en primera persona. Prepárate para vivir una aventura sin límites en el cielo y la tierra."
+        },
         link: "https://termisenpai.itch.io/sniper-rush"
     },
     {
-        title: "Borealis",
-        image: "images/Borealis.gif",  
-        description: "Un clicker narrativo que consiste en mejorar tu nave espacial lo más rápido que puedas porque tienes un límite de tiempo que tienes que superar.",
+        title: {
+            en: "Borealis",
+            es: "Borealis"
+        },
+        image: "images/Borealis.gif",
+        description: {
+            en: "A narrative clicker where you improve your spaceship as fast as you can because you have a time limit to surpass.",
+            es: "Un clicker narrativo que consiste en mejorar tu nave espacial lo más rápido que puedas porque tienes un límite de tiempo que tienes que superar."
+        },
         link: "https://jije.itch.io/borealis"
     },
     {
-        title: "Lavinia",
-        image: "images/Lavinia.png",  
-        description: "¡Acompaña a Lavinia en su épica aventura para destruir el mal y salir del bosque en el que se encuentra prisionera!",
+        title: {
+            en: "Lavinia",
+            es: "Lavinia"
+        },
+        image: "images/Lavinia.png",
+        description: {
+            en: "Join Lavinia on her epic adventure to defeat evil and escape the forest where she is trapped!",
+            es: "¡Acompaña a Lavinia en su épica aventura para destruir el mal y salir del bosque en el que se encuentra prisionera!"
+        },
         link: "https://termisenpai.itch.io/lavinia"
-    },
-    
+    }
 ];
 
+// Datos de Contacto
 const contactContent = {
-    title: "Contacto",
-    description: "Ponte en contacto conmigo",
-    phone: "Tfno: +34 648 27 69 02",
-    email: "Email: escarpaprieto@gmail.com"
+    title: {
+        en: "Contact",
+        es: "Contacto"
+    },
+    description: {
+        en: "Get in touch with me",
+        es: "Ponte en contacto conmigo"
+    },
+    phone: {
+        en: "Phone: +34 648 27 69 02",
+        es: "Tfno: +34 648 27 69 02"
+    },
+    email: {
+        en: "Email: escarpaprieto@gmail.com",
+        es: "Email: escarpaprieto@gmail.com"
+    }
+};
+
+const buttonTexts = {
+    en: {
+        home: "Home",
+        about: "About",
+        studies: "Studies",
+        experience: "Experience",
+        codingSkills: "Skills",
+        projects: "Projects",
+        contact: "Contact"
+    },
+    es: {
+        home: "Inicio",
+        about: "Acerca de",
+        studies: "Estudios",
+        experience: "Experiencia Laboral",
+        codingSkills: "Habilidades",
+        projects: "Proyectos",
+        contact: "Contacto"
+    }
+};
+
+// Datos para el perfil
+const profileContent = {
+    subtitle: {
+        en: "Game Developer",
+        es: "Programador de Videojuegos"
+    },
+    language:{
+        en: "Language",
+        es: "Idioma"
+    }
+};
+
+// Datos para el footer
+const footerContent = {
+    text: {
+        en: "&copy; 2024 Alejandro Escarpa. All rights reserved.",
+        es: "&copy; 2024 Alejandro Escarpa. Todos los derechos reservados."
+    }
 };
 

@@ -13,21 +13,23 @@
             <div class="profile-info">
                 <h1>Alejandro Escarpa</h1>
                 <p>Programador de videojuegos</p>
-                <label for="language-select">Idioma:</label>
-                <select id="language-select">
-                    <option value="en">Inglés</option>
-                    <option value="es" selected>Español</option>
-                </select>
+                <div class="language-selector">
+                    <p for="language-selector">Language:</p>
+                    <select id="language-selector">
+                        <option value="en"selected>English</option>
+                        <option value="es">Español</option>
+                    </select>
+                </div>
             </div>
         </div>
         <div class="menu">
             <button onclick="showTab('home')">Home</button>
-            <button onclick="showTab('about')">Acerca de</button>
-            <button onclick="showTab('studies')">Estudios</button>
-            <button onclick="showTab('experience')">Experiencia Laboral</button>
-            <button onclick="showTab('codingSkills')">Habilidades</button>
-            <button onclick="showTab('projects')">Proyectos</button>
-            <button onclick="showTab('contact')">Contacto</button>
+            <button onclick="showTab('about')">About</button>
+            <button onclick="showTab('studies')">Studies</button>
+            <button onclick="showTab('experience')">Experience</button>
+            <button onclick="showTab('codingSkills')">Skills</button>
+            <button onclick="showTab('projects')">Projects</button>
+            <button onclick="showTab('contact')">Contact</button>
         </div>
         <div class="content" id="content">
             <!-- El contenido variable -->

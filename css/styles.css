@@ -173,3 +173,11 @@ footer {
     padding: 10px 30px;
     text-align: right;
 }
+
+/* Estilo para el selector de idioma */
+
+.language-selector {
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 16px;
+}
