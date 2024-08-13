@@ -163,10 +163,22 @@ const aboutContent = {
 
 const projectEntries = [
     {
+        title: "SniperRush",
+        image: "images/SniperRush.png",  
+        description: "Sumérgete en una experiencia épica de acción con tus amigos con este emocionante shooter en primera persona. Prepárate para vivir una aventura sin límites en el cielo y la tierra.",
+        link: "https://termisenpai.itch.io/sniper-rush"
+    },
+    {
+        title: "Borealis",
+        image: "images/Borealis.gif",  
+        description: "Un clicker narrativo que consiste en mejorar tu nave espacial lo más rápido que puedas porque tienes un límite de tiempo que tienes que superar.",
+        link: "https://jije.itch.io/borealis"
+    },
+    {
         title: "Lavinia",
         image: "images/Lavinia.png",  
-        description: "Un proyecto en desarrollo que explora los límites de la humanidad...",
-        link: "https://xkoigames.com/essence-of-humanity"
+        description: "¡Acompaña a Lavinia en su épica aventura para destruir el mal y salir del bosque en el que se encuentra prisionera!",
+        link: "https://termisenpai.itch.io/lavinia"
     },
     
 ];

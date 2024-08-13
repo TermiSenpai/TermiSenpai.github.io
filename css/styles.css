@@ -63,21 +63,27 @@ p{
 /* Estilos para el menú */
 .menu {
     display: flex;
-    justify-content: space-around;
-    margin-bottom: 20px;
+    justify-content:left; /* Centra los botones horizontalmente */
+    align-items: center; /* Centra los botones verticalmente */
+    background-color: #334659;
+    padding: 10px;
 }
 
 .menu button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
+    color: #f5f7fa;
+    background-color: transparent; /* Fondo transparente para los botones */
+    border: none; /* Sin bordes para un estilo más limpio */
+    font-size: 16px;
+    margin: 0 10px; /* Establece un margen mínimo entre los botones */
+    padding: 10px 15px; /* Añade un poco de padding para hacer más grandes los botones */
+    border-radius: 5px; /* Redondea ligeramente las esquinas de los botones */
     cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .menu button:hover {
-    background-color: #45a049;
+    background-color: #506682; /* Cambia el color de fondo al pasar el ratón sobre un botón */
+    color: #ffffff; /* Cambia el color del texto al pasar el ratón sobre el botón */
 }
 
 /* Estilos para el contenido */
@@ -95,8 +101,12 @@ p{
     justify-content: center;
     margin-bottom: 20px;
     padding: 10px;
-    background-color: #334659;
+    background-color: #2e3c4c;
     border-radius: 5px;
+}
+
+.project-item:hover {    
+    background-color: #334659;
 }
 
 .project-image-wrapper {
@@ -128,12 +138,12 @@ p{
 }
 
 .project-details p {
-    color: #d1dce6;
+    color: #eaeef4;
     margin-bottom: 10px;
 }
 
 .project-details a {
-    color: #4CAF50;
+    color: #a9bdd0;
     text-decoration: none;
     font-weight: bold;
 }
