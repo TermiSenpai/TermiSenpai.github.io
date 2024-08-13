@@ -1,251 +1,183 @@
+/* Estilos para el cuerpo de la página */
 body {
-    font-family: Arial, sans-serif;
+    background-image: url('/images/wallpaper.gif');
+    background-size:cover;
+    background-position: top;
+    background-repeat: no-repeat;
     margin: 0;
     padding: 0;
-    background: #0e1217; /* 950 */
-    color: #f5f7fa; /* 50 */
-    text-align: center;
-}
-
-header {
-    padding: 20px;
-    background: #151b25; /* No en la paleta, pero puedes elegir uno cercano */
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
-    color: #f5f7fa; /* 50 */
-}
-
-header h2 {
-    color: #A9BDD0; /* 300 */
-}
-
-header p {
-    max-width: 600px;
-    margin: 20px auto;
-    color: #EAEEF4; /* 100 */
-}
-
-.button-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin: 20px 0;
-}
-
-header button {
-    padding: 10px 20px;
-    border: none;
-    background: #789AB5; /* 400 */
-    color: #f5f7fa; /* 50 */
-    cursor: pointer;
-}
-
-#download-pdf {
-    order: 2; /* Ensure the PDF button is always centered */
-}
-
-section {
-    padding: 40px 20px;
-    color: #D1DCE6; /* 200 */
-}
-
-section h2 {
-    margin-bottom: 20px;
-    color: #A9BDD0; /* 300 */
-}
-
-section h3 {
-    margin-bottom: 20px;
-    color: #5A7E9D; /* 500 */
-}
-
-#about-me img {
-    width: 150px;
-    border-radius: 50%;
-    margin-bottom: 20px;
-}
-
-#about-me p {
-    max-width: 600px;
-    margin: 20px auto;
-    line-height: 1.6;
-    color: #EAEEF4; /* 100 */
-}
-
-form input, form textarea {
-    width: 80%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #789AB5; /* 400 */
-    border-radius: 5px;
-    color: #0e1217; /* Texto de input, usar el color de fondo para contraste */
-    background: #f5f7fa; /* 50 */
-}
-
-form button {
-    padding: 10px 20px;
-    border: none;
-    background: #789AB5; /* 400 */
-    color: #f5f7fa; /* 50 */
-    cursor: pointer;
-}
-
-section.collapsed > *:not(h2):not(.toggle-button) {
-    display: none;
-}
-
-.toggle-button {
-    display: block;
-    margin: 10px 0;
-    color: #D1DCE6; /* 200 */
-}
-
-.alt-900 {
-    background: #2E3C4C; /* 900 */
-}
-
-.alt-950 {
-    background: #0E1217; /* 950 */
-}
-
-.hidden {
-    display: none;
-}
-
-/* Project section styles */
-#projects {
+    font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
-#projects .project {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
+/* Estilos para el contenedor principal */
+.desktop-app {
     width: 80%;
-    max-width: 800px;
-    margin-bottom: 20px;
+    margin: 50px auto;
+    background-color: #0e1217;
+    border-radius: 25px;
     padding: 20px;
-    background: #151b25;
-    border-radius: 10px;
-    text-align: left;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    flex: 1;
 }
 
-#projects .project img {
-    width: 150px;
-    height: auto;
-    border-radius: 10px;
+h1{
+    color: #f5f7fa;
+}
+
+h3{
+    color: #f5f7fa;
+}
+
+h2{
+    color: #f5f7fa;
+}
+
+p{
+    color: #f5f7fa;
+}
+
+/* Estilos para la sección de perfil */
+.profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-img {
+    width: 5%;
+    height: 5%;
+    border-radius: 25%;
     margin-right: 20px;
 }
 
-#projects .project-content {
-    display: flex;
-    flex-direction: column;
-}
-
-#projects .project h3 {
-    margin: 0 0 10px 0;
-    color: #A9BDD0; /* 300 */
-}
-
-#projects .project p {
+.profile-info h1 {
     margin: 0;
-    color: #D1DCE6; /* 200 */
+    font-size: 24px;
 }
 
-/* Media Queries for Responsive Design */
-@media (max-width: 1200px) {
-    header h1 {
-        font-size: 2.2em;
-    }
-
-    header p, #about-me p {
-        max-width: 500px;
-    }
-
-    form input, form textarea {
-        width: 90%;
-    }
+.profile-info p {
+    margin: 0;
+    font-size: 18px;
+    color: gray;
 }
 
-@media (max-width: 992px) {
-    header h1 {
-        font-size: 2em;
-    }
-
-    header p, #about-me p {
-        max-width: 450px;
-    }
-
-    form input, form textarea {
-        width: 95%;
-    }
+/* Estilos para el menú */
+.menu {
+    display: flex;
+    justify-content:left; /* Centra los botones horizontalmente */
+    align-items: center; /* Centra los botones verticalmente */
+    background-color: #334659;
+    padding: 10px;
 }
 
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 1.8em;
-    }
-
-    header p, #about-me p {
-        max-width: 400px;
-    }
-
-    form input, form textarea {
-        width: 100%;
-    }
-
-    #projects .project {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #projects .project img {
-        margin-right: 0;
-        margin-bottom: 20px;
-    }
-
-    #projects .project h3, #projects .project p {
-        text-align: center;
-    }
+.menu button {
+    color: #f5f7fa;
+    background-color: transparent; /* Fondo transparente para los botones */
+    border: none; /* Sin bordes para un estilo más limpio */
+    font-size: 16px;
+    margin: 0 10px; /* Establece un margen mínimo entre los botones */
+    padding: 10px 15px; /* Añade un poco de padding para hacer más grandes los botones */
+    border-radius: 5px; /* Redondea ligeramente las esquinas de los botones */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-@media (max-width: 576px) {
-    header h1 {
-        font-size: 1.5em;
-    }
-
-    header p, #about-me p {
-        max-width: 350px;
-    }
-
-    #about-me img {
-        width: 120px;
-    }
-
-    form input, form textarea {
-        width: 100%;
-    }
+.menu button:hover {
+    background-color: #506682; /* Cambia el color de fondo al pasar el ratón sobre un botón */
+    color: #ffffff; /* Cambia el color del texto al pasar el ratón sobre el botón */
 }
 
-@media (max-width: 400px) {
-    header h1 {
-        font-size: 1.2em;
-    }
+/* Estilos para el contenido */
+.content {
+    background-color: #3a526a;
+    padding: 20px;
+    border-radius: 5px;
+    flex: 1;
+}
 
-    header p, #about-me p {
-        max-width: 300px;
-    }
+/* Proyectos */
 
-    #about-me img {
-        width: 100px;
-    }
+.project-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #2e3c4c;
+    border-radius: 5px;
+}
 
-    form input, form textarea {
-        width: 100%;
-    }
+.project-item:hover {    
+    background-color: #334659;
+}
+
+.project-image-wrapper {
+    flex: 1;
+    margin-right: 10px; /* Reducimos el margen derecho para acercar la imagen al texto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 150px; /* Limitamos el ancho máximo de la imagen */
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+    max-height: 100px; /* Añadimos una altura máxima para uniformidad */
+    object-fit: contain; /* Asegura que la imagen mantenga su relación de aspecto */
+    border-radius: 5px;
+}
+
+.project-details {
+    flex: 2;
+    text-align: left;
+    color: #f5f7fa;
+}
+
+.project-details h3 {
+    color: #f5f7fa;
+    margin-bottom: 10px;
+}
+
+.project-details p {
+    color: #eaeef4;
+    margin-bottom: 10px;
+}
+
+.project-details a {
+    color: #a9bdd0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-details a:hover {
+    text-decoration: underline;
+}
+
+/* Gama de colores definida */
+.bunker-50 { background-color: #f5f7fa; }
+.bunker-100 { background-color: #eaeef4; }
+.bunker-200 { background-color: #d1dce6; }
+.bunker-300 { background-color: #a9bdd0; }
+.bunker-400 { background-color: #7b9ab5; }
+.bunker-500 { background-color: #5a7e9d; }
+.bunker-600 { background-color: #476582; }
+.bunker-700 { background-color: #3a526a; }
+.bunker-800 { background-color: #334659; }
+.bunker-900 { background-color: #2e3c4c; }
+.bunker-950 { background-color: #0e1217; }
+
+footer {
+    padding: 10px 30px;
+    text-align: right;
+}
+
+/* Estilo para el selector de idioma */
+
+.language-selector {
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 16px;
 }

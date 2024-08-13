@@ -1,111 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Alejandro Escarpa</title>
+    <title>Mi Portafolio</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
-        <h1 data-en="Alejandro Escarpa" data-es="Alejandro Escarpa">Alejandro Escarpa</h1>
-        <h2 data-en="Game Developer" data-es="Desarrollador de videojuegos">Game Developer</h2>
-        <div class="button-container">
-            <button id="en-button" data-en="English" data-es="Inglés">English</button>
-            <button id="es-button" data-en="Spanish" data-es="Español">Español</button>
+    <div class="desktop-app">
+        <div class="profile">
+            <img src="images/Profile.jpg" alt="Imagen de perfil" class="profile-img">
+            <div class="profile-info">
+                <h1>Alejandro Escarpa</h1>
+                <p>Programador de videojuegos</p>
+                <div class="language-selector">
+                    <p for="language-selector">Language:</p>
+                    <select id="language-selector">
+                        <option value="en"selected>English</option>
+                        <option value="es">Español</option>
+                    </select>
+                </div>
+            </div>
         </div>
-        <div class="pdf-container">
-            <button id="download-pdf" data-en="Download PDF" data-es="Descargar PDF">Descargar PDF</button>
+        <div class="menu">
+            <button onclick="showTab('home')">Home</button>
+            <button onclick="showTab('about')">About</button>
+            <button onclick="showTab('studies')">Studies</button>
+            <button onclick="showTab('experience')">Experience</button>
+            <button onclick="showTab('codingSkills')">Skills</button>
+            <button onclick="showTab('projects')">Projects</button>
+            <button onclick="showTab('contact')">Contact</button>
         </div>
-    </header>
-
-    <section id="about-me" class="alt-900">
-        <h2 data-en="About Me" data-es="Sobre Mí">About Me</h2>
-        <img src="images/profile.jpg" alt="Alejandro Escarpa">
-        <p data-en="I am a passionate video game developer. Since I was young, video games have been my passion, and today, I'm proud to say I've turned that passion into my profession."
-           data-es="Soy un apasionado desarrollador de videojuegos. Desde pequeño los videojuegos han sido mi pasión, y hoy en día, me enorgullece decir que he convertido esa pasión en mi profesión.">
-           I am a passionate video game developer. Since I was young, video games have been my passion, and today, I'm proud to say I've turned that passion into my profession.
-        </p>
-        <p data-en="I've had the opportunity to explore the fascinating world of game development, focusing particularly on Unity. With strong skills in C# programming and a deep understanding of Unity's intricacies, I've undertaken various projects, ranging from exciting mobile games to VR and PC games."
-           data-es="He tenido la oportunidad de explorar el fascinante mundo del desarrollo de videojuegos, centrándome especialmente en Unity. Con habilidades sólidas en programación en C# y una profunda comprensión de los entresijos de Unity, he llevado a cabo diversos proyectos, desde emocionantes juegos para móvil, para VR y para PC.">
-           I've had the opportunity to explore the fascinating world of game development, focusing particularly on Unity. With strong skills in C# programming and a deep understanding of Unity's intricacies, I've undertaken various projects, ranging from exciting mobile games to VR and PC games.
-        </p>
-        <p data-en="What excites me most about this field is the ability to create immersive and captivating worlds that allow players to immerse themselves in unique adventures."
-           data-es="Lo que más me emociona de este campo es la capacidad de crear mundos inmersivos y cautivadores que permitan a los jugadores sumergirse en aventuras únicas.">
-           What excites me most about this field is the ability to create immersive and captivating worlds that allow players to immerse themselves in unique adventures.
-        </p>
-        <p data-en="Here you'll find a collection of creations that reflect my evolution as a developer and my dedication to achieving excellence in each project."
-           data-es="Aquí encontrarás una colección de creaciones que reflejan mi evolución como desarrollador y mi dedicación para alcanzar la excelencia en cada proyecto.">
-           Here you'll find a collection of creations that reflect my evolution as a developer and my dedication to achieving excellence in each project.
-        </p>
-        <p data-en="When I'm not immersed in game development, I enjoy diving into other virtual worlds and participating in communities. This passion for video games constantly inspires me to improve and learn new techniques and approaches to make my projects even more exciting and engaging."
-           data-es="Cuando no estoy inmerso en el desarrollo de videojuegos, disfruto sumergirme en otros mundos virtuales y participar en comunidades. Esta pasión por los videojuegos me inspira constantemente a mejorar y aprender nuevas técnicas y enfoques para hacer que mis proyectos sean aún más emocionantes y envolventes.">
-           When I'm not immersed in game development, I enjoy diving into other virtual worlds and participating in communities. This passion for video games constantly inspires me to improve and learn new techniques and approaches to make my projects even more exciting and engaging.
-        </p>
-        <p data-en="My goal is to share my love for video games with everyone and offer them a special experience for their lives, just as classic video games did for me."
-           data-es="Mi objetivo es compartir mi amor por los videojuegos con todos y ofrecerles una experiencia especial para sus vidas, al igual que los antiguos videojuegos lo hicieron conmigo.">
-           My goal is to share my love for video games with everyone and offer them a special experience for their lives, just as classic video games did for me.
-        </p>
-    </section>
-    
-    <section id="my-journey" class="alt-950">
-        <h2 data-en="My Journey" data-es="Mi Trayectoria">My Journey</h2>
-        <div id="experience">
-            <h3 data-en="Experience" data-es="Experiencia">Experience</h3>
-            <!-- Experience entries will be inserted here by JavaScript -->
+        <div class="content" id="content">
+            <!-- El contenido variable -->
         </div>
-        <div id="education">
-            <h3 data-en="Education" data-es="Educación">Education</h3>
-            <!-- Education entries will be inserted here by JavaScript -->
-        </div>
-    </section>
-
-    <section id="my-skills" class="alt-900">
-        <h2 data-en="My Skills" data-es="Mis Habilidades">My Skills</h2>
-        <div id="coding-skills">
-            <h3 data-en="Coding Skills" data-es="Habilidades de Codificación">Coding Skills</h3>
-            <!-- Skills entries will be inserted here by JavaScript -->
-        </div>
-        <div id="professional-skills">
-            <h3 data-en="Professional Skills" data-es="Habilidades Profesionales">Professional Skills</h3>
-            <!-- Skills entries will be inserted here by JavaScript -->
-        </div>
-    </section>
-
-    <section id="projects" class="alt-950">
-        <h2 data-en="Projects" data-es="Proyectos">Projects</h2>
-        <div class="project">
-            <img src="images/project1.jpg" alt="Project 1">
-            <h3 data-en="Project Title 1" data-es="Título del Proyecto 1">Project Title 1</h3>
-            <p data-en="Brief description of project 1." data-es="Breve descripción del proyecto 1.">Brief description of project 1.</p>
-        </div>
-        <div class="project">
-            <img src="images/project2.jpg" alt="Project 2">
-            <h3 data-en="Project Title 2" data-es="Título del Proyecto 2">Project Title 2</h3>
-            <p data-en="Brief description of project 2." data-es="Breve descripción del proyecto 2.">Brief description of project 2.</p>
-        </div>
-        <!-- Add more projects as needed -->
-    </section>
-
-    <section id="contact-me" class="alt-900">
-        <h2 data-en="Contact Me" data-es="Contáctame">Contact Me</h2>
-        <div>
-            <p data-en="Feel free to reach out to me via the following contact details:" 
-               data-es="No dudes en ponerte en contacto conmigo a través de los siguientes datos de contacto:">
-               Feel free to reach out to me via the following contact details:
-            </p>
-            <p data-en="Email: escarpaprieto@gmail.com" data-es="Correo Electrónico: escarpaprieto@gmail.com">Email: escarpaprieto@gmail.com</p>
-            <p data-en="Phone: +34 648 27 69 02" data-es="Teléfono: +34 648 27 69 02">Phone: +34 648 27 69 02</p>
-            <p data-en="LinkedIn" data-es="LinkedIn">LinkedIn: <a href="https://www.linkedin.com/in/alejandro-escarpa/" target="_blank">linkedin</a></p>
-        </div>
-    </section>
-    
-    <footer>
-        <p data-en="All rights reserved." data-es="Todos los derechos reservados.">All rights reserved.</p>
-    </footer>
-
+    </div>
     <script src="js/data.js"></script>
-    <script src="js/render.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
 </body>
+<footer class="footer">
+    <p>&copy; 2024 Alejandro Escarpa. Todos los derechos reservados.</p>
+</footer>
 </html>
