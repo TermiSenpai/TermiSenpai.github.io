@@ -8,10 +8,10 @@ function showTab(tab) {
     content.innerHTML = '';
     switch(tab) {
         case 'home':
-            content.innerHTML = '<h2>Bienvenido a mi Portafolio</h2><p>Esta es la página de inicio.</p>';
+            displayHome();
             break;
         case 'about':
-            content.innerHTML = '<h2>Acerca de</h2><p>Información sobre mí.</p>';
+            displayAbout();
             break;
         case 'studies':
             displayEducation();
@@ -20,10 +20,10 @@ function showTab(tab) {
             displayExperience();
             break;
         case 'projects':
-            content.innerHTML = '<h2>Proyectos</h2><p>Algunos de mis proyectos.</p>';
+            displayProjects();
             break;
         case 'contact':
-            content.innerHTML = '<h2>Contacto</h2><p>Información de contacto.</p>';
+            displayContact();
             break;
         default:
             content.innerHTML = '';
@@ -58,4 +58,49 @@ function displayExperience() {
         `;
         content.appendChild(experienceItem);
     });
+}
+
+function displayHome() {
+    const content = document.getElementById('content');
+    content.innerHTML = `
+        <h2>${homeContent.title}</h2>
+        <p>${homeContent.description}</p>
+    `;
+}
+
+function displayAbout() {
+    const content = document.getElementById('content');
+    content.innerHTML = `
+        <h2>${aboutContent.title}</h2>
+        <p>${aboutContent.description}</p>
+    `;
+}
+
+function displayProjects() {
+    const content = document.getElementById('content');
+    content.innerHTML = '<h2>Proyectos</h2>';
+    
+    projectEntries.forEach(project => {
+        const projectItem = document.createElement('div');
+        projectItem.classList.add('project-item');
+
+        projectItem.innerHTML = `
+            <div class="project-image-wrapper">
+                <img src="${project.image}" alt="${project.title}" class="project-image">
+            </div>
+            <div class="project-details">
+                <h3>${project.title}</h3>
+                <p>${project.description}</p>
+                <a href="${project.link}" target="_blank">Ver proyecto</a>
+            </div>
+        `;
+        content.appendChild(projectItem);
+    });
+}
+function displayContact() {
+    const content = document.getElementById('content');
+    content.innerHTML = `
+        <h2>${contactContent.title}</h2>
+        <p>${contactContent.description}</p>
+    `;
 }

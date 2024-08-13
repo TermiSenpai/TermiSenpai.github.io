@@ -149,3 +149,30 @@ const professionalSkills = [
         es: "Aprendizaje Autodidacta"
     }
 ];
+
+// Datos para las secciones
+const homeContent = {
+    title: "Bienvenido a Xkoi Games",
+    description: "Aquí encontrarás toda la información sobre nuestro equipo y proyectos."
+};
+
+const aboutContent = {
+    title: "Acerca de Nosotros",
+    description: "Xkoi Games es un equipo apasionado por desarrollar videojuegos innovadores..."
+};
+
+const projectEntries = [
+    {
+        title: "Lavinia",
+        image: "images/Lavinia.png",  
+        description: "Un proyecto en desarrollo que explora los límites de la humanidad...",
+        link: "https://xkoigames.com/essence-of-humanity"
+    },
+    
+];
+
+const contactContent = {
+    title: "Contacto",
+    description: "Ponte en contacto con nosotros a través de nuestras redes sociales o correo electrónico."
+};
+
