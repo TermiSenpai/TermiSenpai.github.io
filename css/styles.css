@@ -2,10 +2,11 @@
 html {
     background-image: url('/images/wallpaper.gif');
     background-size:cover;
-    background-position: top;
+    background-position: center;
     background-repeat: no-repeat;
     margin: 0;
     padding: 0;
+    height: 100%;
     font-family: Arial, sans-serif;
 }
 
