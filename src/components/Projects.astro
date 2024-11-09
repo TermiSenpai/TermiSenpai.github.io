@@ -1,0 +1,120 @@
+---
+import GitHub from "./icons/GitHub.astro"
+import NET from "./icons/Net.astro"
+import Link from "./icons/Link.astro"
+import LinkButton from "./LinkButton.astro"
+import Unity from "./icons/Unity.astro"
+
+const TAGS = {
+  UNITY: {
+    name: "Unity",
+    class: "bg-[#1B2B3A] text-white",
+    icon: Unity, 
+  },
+  NET: {
+    name: "C#",
+    class: "bg-[#007a36] text-white",
+    icon: NET,
+  },
+}
+const PROJECTS = [
+  {
+    title: "POP IT",
+    description:
+      "Es un juego arcade que consiste en explotar toda la tanda de globos vertical de un único disparo.",
+    link: "https://termisenpai.itch.io/pop-it",
+    github: "https://github.com/TermiSenpai/HyplayJam",
+    image: "/projects/PopIt.webp",
+    tags: [TAGS.UNITY, TAGS.NET],
+  },
+  {
+    title: "LAVINIA",
+    description:
+      "LAVINIA es un juego de aventura y supervivencia que combina narrativa y mecánicas de recolección, defensa y exploración. Acompaña a Lavinia en su misión para escapar de un bosque misterioso donde el tiempo fluye de manera extraña. Durante el día, el jugador debe recolectar recursos y prepararse para defender la llama primigenia al caer la noche, protegiéndola de los peligros que acechan en la oscuridad.",
+    link: "https://termisenpai.itch.io/lavinia",
+    github: "https://github.com/TermiSenpai/Lavinia",
+    image: "/projects/Lavinia.webp",
+    tags: [TAGS.UNITY, TAGS.NET],
+  },
+  {
+    title: "SNIPER RUSH",
+    description:
+      "SNIPER RUSH es un shooter en primera persona con mecánicas avanzadas de movimiento y combate. Implementé un sistema de gancho que permite a los jugadores explorar un mapa amplio con libertad de movimiento, combinando vuelo, velocidad y saltos en una experiencia dinámica de acción multijugador.",
+    link: "https://termisenpai.itch.io/sniper-rush",
+    github: "https://github.com/TermiSenpai/ArcadeFpsGame",
+    image: "/projects/SniperRush.webp",
+    tags: [TAGS.UNITY, TAGS.NET],
+  },
+  {
+    title: "BOREALIS",
+    description:
+      "Borealis es un clicker narrativo que consiste en mejorar tu nave espacial lo más rápido que puedas porque tienes un límite de tiempo que tienes que superar.",
+    link: "https://jije.itch.io/borealis",
+    github: "https://github.com/TermiSenpai/Indie-Game-Jam-2022",
+    image: "/projects/Borealis.gif",
+    tags: [TAGS.UNITY, TAGS.NET],
+  },  
+  {
+    title: "MONSTER DEFENSE",
+    description:
+      "Juego de tower defense simple y relajante en un mapa y cielo generados proceduralmente. Implementé un sistema con 6 tipos de enemigos y 4 jefes, enfrentados a 6 tipos de torretas que pueden disparar, envenenar o ralentizar a los enemigos. Incluye mecánicas de compra, venta y mejora de torretas hasta nivel 3, en un desafío sin fin.",
+    link: "https://termisenpai.itch.io/monster-defense",
+    image: "/projects/monster.webp",
+    tags: [TAGS.UNITY, TAGS.NET],
+  },
+]
+---
+
+<div class="flex flex-col gap-y-16">
+  {
+    PROJECTS.map(({ image, title, description, tags, link, github }) => (
+    <article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
+  <div class="w-full md:w-1/2">
+    <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
+      <img alt="" class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105" loading="lazy" src={image} />
+    </div>
+  </div>
+
+  <div class="w-full md:w-1/2 md:max-w-lg">
+    <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100">
+      {title}
+    </h3>
+    <div class="flex flex-wrap mt-2">
+      <ul class="flex flex-row mb-2 gap-x-2">
+          {tags.map((tag) => (
+            <li>
+              <span
+                class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2 `}
+              >
+                <tag.icon class="size-4" />
+                {tag.name}
+              </span>
+            </li>
+          ))}
+        </ul>
+
+      <div class="mt-2 text-gray-700 dark:text-gray-400">{description}</div>
+      <footer class="flex items-end justify-start mt-4 gap-x-4">
+          {github && (
+            <LinkButton href={github}>
+              <GitHub class="size-6" />
+              Code
+              
+            </LinkButton>
+          )}
+          {link && (
+            <LinkButton href={link}>
+              <Link class="size-4" />
+              Preview
+            </LinkButton>
+          )}
+        </footer>
+    </div>
+  </div>
+</article>
+    ))
+  }
+</div>
+
+
+

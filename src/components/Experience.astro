@@ -1,0 +1,47 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCE = [
+{
+    date: "Octubre 2024",
+    title: "Desarrollador de videojuegos",
+    company: "Hyplay",
+    description:
+      "Desarrollo de un videojuego arcade para la pataforma de Hyplay con +100 jugadores diarios",
+      link: "https://termisenpai.itch.io/pop-it",
+  },
+  {
+    date: "Enero 2024 - Abril 2024",
+    title: "Desarrollador de software",
+    company: "Austral robotics",
+    description:
+      "Desarrollé una simulación robótica conectando el proceso del PLC, reduciendo los errores de manipulación y la velocidad de puesta en marcha en un 50%",
+  },
+  {
+    date: "Septiembre 2023",
+    title: "Desarrollador de videojuegos",
+    company: "Los ninis",
+    description:
+      "Lead developer, responsable del desarrollo principal, inteligencia artificial de videojuegos, combate, recolección de recursos, inventario, ciclo dia y noche y más",
+      link: "https://termisenpai.itch.io/lavinia"
+  },  
+  {
+    date: "Junio 2023",
+    title: "Desarrollador de videojuegos",
+    company: "Xkoi Games",
+    description:
+      "Lead developer, responsable del desarrollo del sistema multijugador y las físicas que componen el juego",
+      link: "https://termisenpai.itch.io/sniper-rush"
+  },
+  
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>
