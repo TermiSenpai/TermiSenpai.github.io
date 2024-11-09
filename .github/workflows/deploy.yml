@@ -29,15 +29,16 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-          cache: "pnpm"
-          cache-dependency-path: "pnpm-lock.yaml"  # Asegúrate de que `pnpm-lock.yaml` esté en la raíz del proyecto
+
+      - name: Install pnpm
+        run: npm install -g pnpm  # Instala `pnpm`
 
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
 
       - name: Install dependencies
-        run: pnpm install  # Instala dependencias usando `pnpm`
+        run: pnpm install  # Usa `pnpm` para instalar las dependencias
         working-directory: ${{ env.BUILD_PATH }}
 
       - name: Build with Astro
